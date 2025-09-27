@@ -3,13 +3,13 @@
 ### THE PROCESS
 - right off the bat I wanted to do the harder option of having a prompt pop up to put in any number you want, and for it to be able to say 'that's not right.........' when the user didn't input a number
 - I remembered in [chapter 2](https://eloquentjavascript.net/02_program_structure.html) of eloquent javascript an example program that does the exact thing I just described:
-`let theNumber = Number(prompt("Pick a number"));
-if (!Number.isNaN(theNumber)) {
-  console.log("Your number is the square root of " +
-              theNumber * theNumber);
-} else {
-  console.log("Hey. Why didn't you give me a number?");
-}`
+`let theNumber = Number(prompt("Pick a number"));`
+`if (!Number.isNaN(theNumber)) {`
+`  console.log("Your number is the square root of " +`
+              `theNumber * theNumber);`
+`} else {`
+`  console.log("Hey. Why didn't you give me a number?");`
+`  }`
 - it would've taken me probably 70% less time if I just copy pasted the code and changed the function of the binding to fit this assignment but I didn't because I wanted to try typing it out myself
 - this was inefficient because of many roadblocks I ran into (but easily figured out), like:
 	- forgetting to specify the type of string prompted by `let f = prompt("enter a number degree of fahrenheit");` as a number, fixed by looking back at the code I'm copying off of and just copying what it said
