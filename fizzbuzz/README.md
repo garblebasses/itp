@@ -3,7 +3,7 @@ I did this assignment in class, I actually decided to think on the solution for 
 
 I thought of it like a 2x2 true/false table, since there's only 4 possible outputs when it logs a number:
 
-![2 by 2 table showing that if a given number is divisible by both 3 and 5, the output will be fizzbuzz. if the number is divisible by 3 or 5 it will be fizz or buzz respectively. if the number is divisible by neither 3 or 5, it will just output the number.](fizzbuzz table.png)
+![2 by 2 table showing that if a given number is divisible by both 3 and 5, the output will be fizzbuzz. if the number is divisible by 3 or 5 it will be fizz or buzz respectively. if the number is divisible by neither 3 or 5, it will just output the number.](https://github.com/garblebasses/itp/blob/main/fizzbuzz/fizzbuzz%20table.png)
 
 it's actually really straightforward, it checks if the given number is divisible by 3 or not, then in both cases also checks if the number is divisible by 5, and it gets its corresponding output based on what is true and what is false.
 
