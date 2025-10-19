@@ -23,7 +23,7 @@ I created smiley face tiles in p5.js!!!!
 - I had to figure out `width` and `height` call to the canvas size, which is why they are divided by `tiles` to figure out how far to space the iterations apart
 - I actually got it working [kinda, I will explain about 2 lines down from here] before implementing scaling in, but obviously I needed to add it
 - to implement scaling, I just added in the line defining `s` as `4/tiles` and it's 4 because that's just the parameters from phase 3 I built this off of, the canvas is 400x400 and if I try to think about it harder my brain starts to hurt
-- but this first attempt had one flaw in where now when I tried to output it altogether, I found something strage:
+- but this first attempt had one flaw in where now when I tried to output it altogether, I found something strange:
 
 ![output of my code of 4x4 happy face tiles, the tiles are offset by 1 pixel per loop making the last row and column cut off](https://github.com/garblebasses/itp/blob/main/midterm/veryhappy4.png)
 
