@@ -1,7 +1,7 @@
 # BAND SITE
 [link to kandy krush's site](https://ezramemphis.github.io/Kandy-Krush/)
 
-## problems faced
+## problems faced [all solved from googling or chatgpt]
 things that needed extra research:
 - text color shifting
 - importing local fonts
