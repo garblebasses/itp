@@ -1,0 +1,22 @@
+## FINAL PROJECT
+### what did I do
+- I made an interactive-ish squelch generator in p5.live using hydra and hy5
+### how was this achieved [along with issues that came up]
+### the initial code
+- I first started with how to generate random noise using [thecodingtrain.com](https://thecodingtrain.com/)'s [video tutorials on it](https://www.youtube.com/watch?v=ikwNrFvnL3g&list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD&index=4), pretty straightforward with no issues as it is just a step by step tutorial
+- then I wanted to figure out how to do the randomized 'gradation mapping' as I / my visual art program calls it. I looked through the sample files on p5.live and found one that looked pretty close to what I was looking to make, so I copy pasted a bunch of lines from it I assumed were fx-ing the p5 stuff underneath it, and the lines importing the libraries needed for those effects, hydra and hy5.
+- the `.modulate(noize)` effect was integral to making the noise not just a static image, and more like moving slimy ooze
+- a main hydra effect creating what I consider a major aspect of gloopy shit is `.colorama`, which to my understanding is taking overall brightness values from every pixel and remapping them to a new randomized gradient. I think the number in the `.colorama` command ie `.colorama(x)` is somehow related to how many different colors the gradient everything is being remapped to goes through. I'm not sure though.
+	- a problem that came up with this was the fact that since the noise generated with p5 was always static grayscale with no randomization, without randomizing the `x` in `.colorama(x)`, the gloops would always turn up as the same exact gradient, which isn't what I wanted.
+	- how I fixed this was adding a random hue overlay on top of the generated noise in p5, and the colorama gradients would come out radically different every refresh
+- I stacked some more hydra fx ontop, just some `.saturate` and `.brightness` just to make it more vibrant, I also stacked `.colorama`s because I felt it in my gut that doing that made it more chaotic than increasing the integer in one instance of the effect
+- moving onto the interactive bit, it was quite easy actually to figure out drawing in p5, simply when the mouse is held down draw a circle where the mouse is
+- this is important to add to the crazy colorama thing, because now we're adding more hues and shades. I made sure the circles weren't full opacity so there's more inbetween shades for more color possibility
+- I also added a mousewheel functionality, scrolling up or down changes the brightness of the circles you're drawing, allowing more control and more options as to how your mouse is affecting the overall canvas. though there is an issue with this:
+	- I couldn't figure out a way to visually show what brightness level the circles you're drawing are, because hydra effects layer on top of p5 if I tried to show that within p5 it would just get obscured by the effects, and I couldn't figure out how to get it to show individually above all of the effects
+	- I also just now as I was typing this fixed the scrolling function on the site, as previously it was not working. I removed the other stuff on the site [sadly] and now scrolling is more responsive. I think the problem was it was registering the scrolling only once it reached the edge of the page, so it stopped focusing on scrolling the webpage and started focusing on sending the fact that it is scrolling to the p5 code. that's just an uneducated guess though
+- lastly on the coding side of things, I did add audio interactivity through hydra's system but I found myself quite unsatisfied visually with what I could modulate with audio and I will probably not even touch on it during my presentation in class
+### the port to html
+- when I tried just pasting the .js file into my site's folder, it would just pop up the p5 side of things, the generated noise [with the random hue overlay] and the drawing function. strangely enough the circles were completely solid colored which they weren't supposed to be
+- I did try pasting everything in p5.live into my code but that didn't work either, so I went back to the fact you pointed out to me that hy5 was also imported into the code
+- what I ended up doing was just taking the .js files that were linked my .js file, putting them into my site's folder and making sure they were imported in the .html file, and now it works!!!
