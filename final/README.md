@@ -1,6 +1,6 @@
 ## FINAL PROJECT
 ### what did I do
-- I made an interactive-ish squelch generator in p5.live using hydra and hy5
+- I made an interactive-ish squelch generator in p5.live using hydra and hy5, then hosted it in [html](https://garblebasses.github.io/)
 ### how was this achieved [along with issues that came up]
 ### the initial code
 - I first started with how to generate random noise using [thecodingtrain.com](https://thecodingtrain.com/)'s [video tutorials on it](https://www.youtube.com/watch?v=ikwNrFvnL3g&list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD&index=4), pretty straightforward with no issues as it is just a step by step tutorial
